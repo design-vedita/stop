@@ -1,0 +1,56 @@
+include includes/head
+include includes/header
+include includes/slider
+include includes/application
+include includes/list_problem
+include includes/result
+include includes/services
+include includes/count
+include includes/news
+include includes/footer
+include includes/scripts
+include includes/mixins
+doctype html
+
+html(lang="en")
+    head
+        +head()
+    body
+        include blocks/svg.html
+
+        // Шапка сайта
+        +header()
+        //
+
+        main
+
+            // Слайдер на главной
+            +slider()
+            //
+
+            // Заявка
+            +application()
+            //
+
+            // Список проблем
+            +list_problem()
+            //
+
+            // Гарантия результат
+            +result()
+            //
+
+            // Услуги
+            +services()
+            //
+
+            // Количество
+            +count()
+            //
+
+            // Новости
+            +news
+            //
+        footer
+            +footer()
+        +scripts()

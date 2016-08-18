@@ -1,0 +1,25 @@
+mixin application()
+   .application
+      .container
+         .row
+            .col-md-6.col-sm-6.col-xs-12
+               .application__left
+                  .description-block
+                     p.title  Банкротство
+                        br
+                        |  без посредников
+                     p.subtitle  Собственный бизнес стал  проблемой?
+                     p.preview   Лучшая наша гарантия – профессионализм наших сотрудников. Мы очень серьезно относимся к защите интересов наших клиентов. Насколько эффективно мы это делаем, Вы сможете убедиться на этапе консультации и составления предварительной сметы.
+            .col-md-6.col-sm-6.col-xs-12
+               .application__right
+                  form
+                     fieldset
+                        legend   Оставьте заявку
+                        input(type="text"
+                              placeholder="Ваше имя").name
+                        br
+                        input(type="phone"
+                              placeholder="Телефон").phone
+                        input(type="submit"
+                              value="Отправить")
+
