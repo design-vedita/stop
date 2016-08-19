@@ -6,7 +6,7 @@ mixin services()
             ul.list-services
                li
                   +svg('like')
-                  p.list-title Ликвидация путем банкротства
+                  p.list-title: a(href="javascript:void(0)") Ликвидация путем банкротства
                   ul
                      li Полная процедура банкротства
                      li Банкротство по инициативе должника
@@ -14,7 +14,7 @@ mixin services()
                      li О банкротстве
                li
                   +svg('spectacles')
-                  p.list-title Банкротство предприятий
+                  p.list-title: a(href="javascript:void(0)") Банкротство предприятий
                   ul
                      li Банкротство фирм с долгами
                      li Банкротство ООО
@@ -24,7 +24,7 @@ mixin services()
                      li Услуги арбитражного управляющего
                li
                   +svg('text')
-                  p.list-title Банкротство физических лиц
+                  p.list-title: a(href="javascript:void(0)") Банкротство физических лиц
                   ul
                      li Основания для проведения банкротства физического лица
                      li Последствия проведения банкротства физического лица
@@ -37,24 +37,24 @@ mixin services()
             ul.list-services
                li
                   +svg('text')
-                  p.list-title Реорганизация
+                  p.list-title: a(href="javascript:void(0)") Реорганизация
                   ul
                      li Реорганизация предприятия в форме
                      li присоединения или слияния с другой
                li
                   +svg('spectacles')
-                  p.list-title Смена руководителя
+                  p.list-title: a(href="javascript:void(0)") Смена руководителя
                   ul
                      li Смена учредителей и руководителя предприятия
                li
                   +svg('text')
-                  p.list-title Реорганизация
+                  p.list-title: a(href="javascript:void(0)") Реорганизация
                   ul
                      li Реорганизация предприятия в форме
                      li присоединения или слияния с другой
                li
                   +svg('spectacles')
-                  p.list-title Смена руководителя
+                  p.list-title: a(href="javascript:void(0)") Смена руководителя
                   ul
                      li Смена учредителей и руководителя предприятия
-            a.all-services Все услуги
+            a(href="javascript:void(0)").all-services Все услуги

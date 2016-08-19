@@ -1,3 +1,43 @@
 mixin footer()
    .container
        .row
+           .col-md-3
+               .footer-logo
+                   a(href="javascript:void(0)")
+                       img(src="../img/logo-footer.png" alt="")
+           .col-md-2.col-md-offset-1
+               ul
+                   li:  a(href="javascript:void(0)")  Заявка
+                   li:  a(href="javascript:void(0)")  О компании
+                   li:  a(href="javascript:void(0)")  Новости
+                   li:  a(href="javascript:void(0)")  Публикации
+                   li:  a(href="javascript:void(0)")  Документы
+                   li:  a(href="javascript:void(0)")  Контакты
+           .col-md-2
+               ul
+                   li:  a(href="javascript:void(0)")  Налоги
+                   li:  a(href="javascript:void(0)")  Смена руководителя
+                   li:  a(href="javascript:void(0)")  Реорганизация
+                   li:  a(href="javascript:void(0)")  Банкротство
+                   li:  a(href="javascript:void(0)")  Ликвидация
+                   li:  a(href="javascript:void(0)")  Ликвидация путём банкротства
+           .col-md-3.col-md-offset-1
+               .footer-call
+                   +svg('phone')
+                   span  8-800-123-45-67
+                   a(href="javascript:void(0)")  Перезвонить мне
+               .footer-soc
+                   ul
+                       li:  a(href="javascript:void(0)")
+                            +svg('twitter')
+                       li:  a(href="javascript:void(0)")
+                           +svg('vk')
+                       li:  a(href="javascript:void(0)")
+                           +svg('facebook')
+               .footer-developer
+                   p    Интернет-магазин
+                    br
+                    | на 1С-Битрикс
+                   a(href="http://vedita.ru" target="_blank")
+                    +svg('vedita_logo')
+

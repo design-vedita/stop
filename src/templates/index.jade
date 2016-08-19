@@ -7,6 +7,9 @@ include includes/result
 include includes/services
 include includes/count
 include includes/news
+include includes/clients
+include includes/question
+include includes/documents
 include includes/footer
 include includes/scripts
 include includes/mixins
@@ -50,6 +53,18 @@ html(lang="en")
 
             // Новости
             +news
+            //
+
+            // Клиенты
+            +clients()
+            //
+
+            // Вопросы/заявка
+            +question()
+            //
+
+            // Документы
+            +documents()
             //
         footer
             +footer()
