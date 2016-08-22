@@ -1,11 +1,11 @@
 mixin footer()
    .container
        .row
-           .col-md-3
+           .col-md-3.col-sm-5.col-xs-12
                .footer-logo
                    a(href="javascript:void(0)")
                        img(src="../img/logo-footer.png" alt="")
-           .col-md-2.col-md-offset-1
+           .col-md-2.col-md-offset-1.hidden-sm.hidden-xs
                ul
                    li:  a(href="javascript:void(0)")  Заявка
                    li:  a(href="javascript:void(0)")  О компании
@@ -13,7 +13,7 @@ mixin footer()
                    li:  a(href="javascript:void(0)")  Публикации
                    li:  a(href="javascript:void(0)")  Документы
                    li:  a(href="javascript:void(0)")  Контакты
-           .col-md-2
+           .col-md-2.hidden-sm.hidden-xs
                ul
                    li:  a(href="javascript:void(0)")  Налоги
                    li:  a(href="javascript:void(0)")  Смена руководителя
@@ -21,7 +21,7 @@ mixin footer()
                    li:  a(href="javascript:void(0)")  Банкротство
                    li:  a(href="javascript:void(0)")  Ликвидация
                    li:  a(href="javascript:void(0)")  Ликвидация путём банкротства
-           .col-md-3.col-md-offset-1
+           .col-md-3.col-md-offset-1.col-sm-5.col-sm-offset-2.col-xs-12
                .footer-call
                    +svg('phone')
                    span  8-800-123-45-67

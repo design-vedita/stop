@@ -19,17 +19,27 @@
       <div class="header-top">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3 col-sm-5 col-xs-12">
               <div class="header-top__logo"><a href="javascript:void(0)"><img src="../img/logo.png" alt=""/></a></div>
             </div>
-            <div class="col-md-3 col-md-offset-5 col-lg-3 col-lg-push-6 col-lg-offset-0">
+            <div class="col-md-3 col-md-offset-5 col-lg-3 col-lg-push-6 col-lg-offset-0 col-sm-4 col-sm-offset-3 hidden-xs">
               <div class="header-top__call">
                 <svg class="phone">
                   <use xlink:href="#phone"></use>
                 </svg><span> 8-800-123-45-67</span><a href="javascript:void(0)"> Перезвонить мне</a>
               </div>
             </div>
-            <div class="col-md-12 col-lg-6 col-lg-pull-3 menu">
+            <div class="col-xs-12 visible-xs menu-phone js-menu-phone">
+              <p> Меню</p>
+            </div>
+            <div class="col-md-12 col-lg-6 col-lg-pull-3 menu col-sm-12 col-xs-12">
+              <div class="header-top__phone visible-xs">
+                <ul>
+                  <li><a href="javascript:void(0)">Ликвидация путем банкротства</a></li>
+                  <li><a href="javascript:void(0)">Банкротство предприятий</a></li>
+                  <li><a href="javascript:void(0)">Банкротство физических лиц</a></li>
+                </ul>
+              </div>
               <div class="header-top__menu">
                 <nav>
                   <ul>
@@ -46,17 +56,17 @@
           </div>
         </div>
       </div>
-      <div class="header-bottom">
+      <div class="header-bottom hidden-xs">
         <div class="container">
           <div class="row">
-            <div class="col-md-11 col-lg-9">
+            <div class="col-md-11 col-lg-9 col-sm-11">
               <ul>
                 <li><a href="javascript:void(0)">Ликвидация путем банкротства</a></li>
                 <li><a href="javascript:void(0)">Банкротство предприятий</a></li>
                 <li><a href="javascript:void(0)">Банкротство физических лиц</a></li>
               </ul>
             </div>
-            <div class="col-md-1 col-lg-3">
+            <div class="col-md-1 col-lg-3 col-sm-1">
               <div class="header-bottom__search">
                 <form>
                   <input type="text" placeholder="Поиск"/>
@@ -71,7 +81,7 @@
     <!---->
     <main>
       <!-- Слайдер на главной-->
-      <div class="slider">
+      <div class="slider hidden-xs">
         <div class="slider__arrows">
           <div class="js-arrows"></div>
           <div class="dots js-dots"></div>
@@ -106,7 +116,7 @@
       <div class="application">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-12 col-xs-12">
               <div class="application__left">
                 <div class="description-block">
                   <p class="title"> Банкротство<br/> без посредников</p>
@@ -115,7 +125,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="col-md-6 col-sm-12 col-xs-12">
               <div class="application__right">
                 <form>
                   <fieldset>
@@ -137,7 +147,10 @@
           <div class="row">
             <div class="col-md-12">
               <div class="list-problem__text">
-                <p class="title"> Собственный<br/>бизнес стал проблемой?</p>
+                <p class="title">
+                   Собственный
+                  бизнес стал проблемой?
+                </p>
                 <ul>
                   <li>Долги мертвой хваткой сдавили и не отпускают?</li>
                   <li>Хотите выйти из ставшего обузой бизнеса?</li>
@@ -147,7 +160,7 @@
                   <li>Помощь должникам и кредиторам.</li>
                   <li>Банкротство вашего ООО без риска.</li>
                 </ul>
-                <div class="list-image"></div>
+                <div class="list-image hidden-xs"></div>
               </div>
             </div>
           </div>
@@ -260,10 +273,10 @@
       </div>
       <!---->
       <!-- Количество-->
-      <div class="count">
+      <div class="count hidden-xs">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
               <div class="count__ico">
                 <svg class="text">
                   <use xlink:href="#text"></use>
@@ -273,7 +286,7 @@
                 <p> 15 736</p><span> Довольных клиентов</span>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
               <div class="count__ico">
                 <svg class="text">
                   <use xlink:href="#text"></use>
@@ -283,7 +296,7 @@
                 <p> 15 736</p><span> Выгранных дел</span>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 hidden-sm">
               <div class="count__ico">
                 <svg class="text">
                   <use xlink:href="#text"></use>
@@ -305,20 +318,22 @@
               <p class="title"> Новости</p>
               <ul>
                 <li>
-                  <div class="news__date">
+                  <div class="news__date hidden-xs">
                     <p>24</p><span> Марта</span>
                   </div>
                   <div class="news__annotation">
                     <p class="news-title"><a href="javascript:void(0)">  Очередная ликвидация строительной фирмы путем банкротства</a></p>
+                    <p class="date visible-xs">24 мая 2016 г.</p>
                     <p> Очередное судебное разбирательство постигло ликвидатора – на этот раз строительную компанию ООО «Союз СЦ». Дело закончилось введением конкурсного...</p><a class="more">  Дальше</a>
                   </div>
                 </li>
                 <li>
-                  <div class="news__date">
+                  <div class="news__date hidden-xs">
                     <p>04</p><span> Апреля</span>
                   </div>
                   <div class="news__annotation">
                     <p class="news-title"><a href="javascript:void(0)">  Юристы о компенсации сотрудникам,  уволенным из-за ликвидации</a></p>
+                    <p class="date visible-xs">24 мая 2016 г.</p>
                     <p> Юристы ведущих агентств выступили с заявлением относительно того, вправе ли работодатель уволить всех своих сотрудников при закрытии фирмы. Этот вопрос...</p><a href="javascript:void(0)" class="more">  Дальше</a>
                   </div>
                 </li>
@@ -342,7 +357,7 @@
       <div class="clients">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
               <div class="clients__ico">
                 <svg class="text">
                   <use xlink:href="#text"></use>
@@ -353,7 +368,7 @@
                 <button class="clients-link">Заказать услугу</button>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-6">
               <div class="clients__ico">
                 <svg class="text">
                   <use xlink:href="#text"></use>
@@ -364,7 +379,7 @@
                 <button class="clients-link">Заказать услугу</button>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12 sm-block">
               <div class="clients__ico">
                 <svg class="text">
                   <use xlink:href="#text"></use>
@@ -382,7 +397,7 @@
       <!-- Вопросы/заявка-->
       <div class="question">
         <div class="container">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12">
             <p class="title"> Вопросы и ответы</p><a href="javascript:void(0)" class="all-articles"> Смотреть все статьи</a>
             <ul>
               <li><a href="javascript:void(0)"> Как составить заявление на присоединение в другой регион</a></li>
@@ -394,7 +409,7 @@
               <li><a href="javascript:void(0)"> Закрытие ООО при отсутствии второго участника. Как?  Закрыть ЗАО: как?</a></li>
             </ul>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12">
             <div class="request">
               <p class="title"> Оставьте заявку</p>
             </div>
@@ -449,10 +464,10 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-5 col-xs-12">
             <div class="footer-logo"><a href="javascript:void(0)"><img src="../img/logo-footer.png" alt=""/></a></div>
           </div>
-          <div class="col-md-2 col-md-offset-1">
+          <div class="col-md-2 col-md-offset-1 hidden-sm hidden-xs">
             <ul>
               <li><a href="javascript:void(0)"> Заявка</a></li>
               <li><a href="javascript:void(0)"> О компании</a></li>
@@ -462,7 +477,7 @@
               <li><a href="javascript:void(0)"> Контакты</a></li>
             </ul>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 hidden-sm hidden-xs">
             <ul>
               <li><a href="javascript:void(0)"> Налоги</a></li>
               <li><a href="javascript:void(0)"> Смена руководителя</a></li>
@@ -472,7 +487,7 @@
               <li><a href="javascript:void(0)"> Ликвидация путём банкротства</a></li>
             </ul>
           </div>
-          <div class="col-md-3 col-md-offset-1">
+          <div class="col-md-3 col-md-offset-1 col-sm-5 col-sm-offset-2 col-xs-12">
             <div class="footer-call">
               <svg class="phone">
                 <use xlink:href="#phone"></use>
