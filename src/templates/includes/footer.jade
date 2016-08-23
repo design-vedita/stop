@@ -7,7 +7,7 @@ mixin footer()
                        img(src="../img/logo-footer.png" alt="")
            .col-md-2.col-md-offset-1.hidden-sm.hidden-xs
                ul
-                   li:  a(href="javascript:void(0)")  Заявка
+                   li.active:  a(href="javascript:void(0)")  Заявка
                    li:  a(href="javascript:void(0)")  О компании
                    li:  a(href="javascript:void(0)")  Новости
                    li:  a(href="javascript:void(0)")  Публикации
@@ -26,7 +26,7 @@ mixin footer()
                    +svg('phone')
                    span  8-800-123-45-67
                    a(href="javascript:void(0)")  Перезвонить мне
-               .footer-soc
+               .footer-soc.hidden-xs
                    ul
                        li:  a(href="javascript:void(0)")
                             +svg('twitter')
@@ -35,6 +35,8 @@ mixin footer()
                        li:  a(href="javascript:void(0)")
                            +svg('facebook')
                .footer-developer
+                   span.visible-xs    Все права защищены © 2016 г.
+                   br
                    p    Интернет-магазин
                     br
                     | на 1С-Битрикс

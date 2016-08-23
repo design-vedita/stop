@@ -1,0 +1,16 @@
+mixin order()
+   .order
+      form
+      .container
+         .row
+            .col-md-6.js-parent
+               p.title  Оставьте заявку
+               input(type="text" placeholder="Ваше имя")
+               input(type="phone" placeholder="Телефон")
+            .col-md-6.js-child.child
+               .child-block
+                  label Сообщение
+                  br
+                  textarea
+            .col-md-12
+               input(type="submit" value="Отправить")

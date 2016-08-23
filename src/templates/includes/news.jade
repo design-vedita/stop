@@ -13,7 +13,7 @@ mixin news()
                         p.news-title: a(href="javascript:void(0)")   Очередная ликвидация строительной фирмы путем банкротства
                         p.date.visible-xs 24 мая 2016 г.
                         p  Очередное судебное разбирательство постигло ликвидатора – на этот раз строительную компанию ООО «Союз СЦ». Дело закончилось введением конкурсного...
-                        a.more   Дальше
+                        a(href="javascript:void(0)").more   Дальше
                   li
                      .news__date.hidden-xs
                         p 04
@@ -25,7 +25,7 @@ mixin news()
                         a(href="javascript:void(0)").more   Дальше
                         
                a(href="javascript:void(0)").all-news  Все новости
-            .col-md-6
+            .col-md-6.about
                p.title  Кто мы?
                img(src="../img/about.jpg").about-img
                .about-descrition

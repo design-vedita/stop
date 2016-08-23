@@ -16,20 +16,32 @@ mixin header()
                      +svg('phone')
                      span  8-800-123-45-67
                      a(href="javascript:void(0)")  Перезвонить мне
-               .col-xs-12.visible-xs.menu-phone.js-menu-phone
+               .col-xs-12.visible-xs.menu-phone
                   p  Меню
-               .col-md-12.col-lg-6.col-lg-pull-3.menu.col-sm-12.col-xs-12
+                  .burger.js-burger
+                     span
+                     span
+                     span
+               .col-md-12.col-lg-6.col-lg-pull-3.menu.col-sm-12.col-xs-12.js-menu-phone
                   .header-top__phone.visible-xs
                      ul
                         each items in menu2
-                           li
-                              a(href="javascript:void(0)")= items
+                           if items == 'Банкротство предприятий'
+                              li.active
+                                 a(href="javascript:void(0)")= items
+                           else
+                              li
+                                 a(href="javascript:void(0)")= items
                   .header-top__menu
                      nav
                         ul
                            each item in menu
                               li
                                  a(href="javascript:void(0)")= item
+                  .header-top__phone-search.visible-xs
+                     form
+                        input(type="text" placeholder="Поиск")
+                        input(type="submit" value="")
 
       .header-bottom.hidden-xs
          .container
