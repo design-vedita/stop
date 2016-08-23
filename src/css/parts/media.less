@@ -881,7 +881,7 @@
            p {
 
               &.title {
-                margin-top: -33px;
+                margin-top: -20px;
                 padding-left: 15px;
                 font-size: 20px;
                 line-height: 24px;
@@ -1460,6 +1460,33 @@
             width: 100%;
           }
         }
+    }
+
+    .list-problem {
+
+      &::before {
+        width: 86%;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+
+  main {
+
+    .list-problem {
+
+      &__text {
+
+        p {
+
+          &.title {
+            width: 68%;
+          }
+        }
+      }
     }
   }
 }
